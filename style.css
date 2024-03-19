@@ -1,12 +1,12 @@
 #big-container{
     border: 1px;
-
 }
 .main-header{
     display: flex;
 }  
 navbar {
     display: inline;
+    
 }
 .navbar p{
     margin-right: 80px;
@@ -28,6 +28,8 @@ span{
 #Page1{
     justify-content: center;
     display: flex;
+    background-color: rgb(241,241,241);
+    gap:1%;
 }
 h1{
     font-size: 300%;
@@ -37,7 +39,7 @@ button{
     background-color: black;
     margin: 20px;
     height: 5vh;
-    width: 100%;
+    width: 70%;
 }
 .Image2{
     width: 700px;
@@ -63,62 +65,128 @@ button{
     display: flex;
 }
 .Image7{
-    display: flex;
-    height: 400px;
-    width: 700px;
+    height: 800px;
+    width: 600px;
+}
+.Image8{
+    width: 1650px;
 }
 #Page6{
     display: flex;
+    background-color: rgb(241,241,241);
+
 }
 .Part2{
     margin-left: 10%;
 }
+
 /* Media query for responsiveness */
 
-@media screen and (max-width:600px){
-    #nav-bar{
-    
-        flex-direction: row;
-        
-        justify-content: space-between;
-     
-     } 
-     navbar {
-        flex-direction: row;
+@media screen and (min-width:280px) and (max-width:1024px){
+    body{
+        font-size: 10px;
     }
-      .main-header{
-        flex-direction: row;
-     } 
-     #Page1{
+    
+    #big-container{
+        border: 1px;
+    }
+    .main-header{
+        display: flex;
+    }  
+    navbar {
+        display: inline;
+    }
+    .navbar p{
+        margin-right: 80px;
+    }
+    #nav-bar{
+        
+       display: flex;
+       
+       justify-content: space-between;
+    
+    }
+    span{
+        color: red;
+    }
+    .Image1{
+        width: 30px;
+        height: 30px;
+    }
+    #Page1{
         justify-content: center;
-        flex-direction: row;
+        display: flex;
+        flex-direction: column;
+    }
+    h1{
+        font-size: 300%;
+    }
+    button{
+        color: white;
+        background-color: black;
+        margin: 20px;
+        height: 5vh;
+        width: 80%;
+    }
+    .Image2{
+        width: 250px;
+        height: 350px;
     }
     #Page2{
-        flex-direction: row;
+        display: flex;
+        flex-direction: column;
+    }
+    .Image9{
+        width: 350px;
+        height: 350px;
     }
     #Page3{
-        flex-direction: row;
+        display: flex;
         justify-content: center;
+        flex-direction: column;
+    }
+    .Image4{
+        height: 200px;
     }
     #Page4{
-        flex-direction: row;
-    } 
-    .Image5{
-        flex-direction: row;
-    }
-    .Image6{
-        flex-direction: row;
-    }
-    .Image7{
-        flex-direction: row;
-        height: 400px;
-        width: 700px;
-    }
-    #Page6{
-        flex-direction: row;
-    }
-    .Part2{
-        margin-left: 10%;
+        display: flex;
+        flex-direction: column;
     }
 
-   }
+    .Image5{
+        display: flex;
+    }
+    .Image{
+        width:150px ;
+        height:150px ;
+    }
+    .Image6{
+        display: flex;
+    }
+    .Image7{
+        height: 400px;
+        width: 300px;
+    }
+    .Image8{
+        width: 400px;
+        height: 200px;
+    }
+    #Page6{
+        display: flex;
+        gap: 2%;
+        background-color: rgb(241,241,241);
+    }
+    .Part2{
+        margin-left: 1%;
+        flex-direction: column;
+    }  
+
+}
+
+/* Media query for responsiveness 2 */
+
+
+
+
+
+   
